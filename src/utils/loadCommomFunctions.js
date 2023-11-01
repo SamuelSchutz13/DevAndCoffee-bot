@@ -1,5 +1,6 @@
 const { BOT_EMOJI } = require("../config");
 const { extractDataFromMessage, baileysIs, download } = require(".");
+const { getRandomWaitMessage } = require("./messages");
 
 exports.loadCommomFunctions = ({ bot, baileysMessage }) => {
     const { remoteJid, prefix, commandName, args, userJid, isReply, replyJid } =
@@ -48,7 +49,8 @@ exports.loadCommomFunctions = ({ bot, baileysMessage }) => {
 
     async function sendWaitReply(text) {
         await sendWaitReact();
-        return await sendReply(`⏳ Aguarde! ${text}`);
+        const waitMessage = getRandomWaitMessage();
+        return await sendReply(`⏳ Aguarde! ${text || waitMessage}`);
     }
 
     const sendWarningReply = async (text) => {
