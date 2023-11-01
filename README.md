@@ -23,8 +23,8 @@ in the terminal of the following commands
     Open the terminal and run the following command to clone the Dev&Coffee-bot repository:
 
     ```bash
-    git clone https://github.com/seu-usuario/devandcoffee-bot.git
-    cd devandcoffe-bot
+    git clone https://github.com/seu-usuario/DevAndCoffee-bot.git
+    cd DevAndCoffee-bot-bot
 
 3. **Install dependencies**
 
@@ -43,4 +43,4 @@ Edit the .env file and provide the required information such as the API key, tok
 
 You can now launch the bot by running the following command:
 
-`.npm start devandcoffee-bot`
+`.npm start DevAndCoffee-bot-bot`
